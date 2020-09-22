@@ -97,9 +97,7 @@ function keyTyped() {
   if (key == 's' || key == 'S') {
     save('Trip.png');
   }
-}
 
-function keyTyped() {
   if (key == 't' || key == 'Ts') {
     if (textSwitch == true) {
       textSwitch = false;
@@ -107,4 +105,5 @@ function keyTyped() {
       textSwitch = true;
     }
   }
+  
 }
