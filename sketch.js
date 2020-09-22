@@ -28,7 +28,7 @@ function draw() {
     textAlign(CENTER);
     textFont('sans-serif');
     fill(255);
-    text('Move the cursor to change colors,\nclick to stop it or make it move again', -750, 0);
+    text('Move the cursor to change colors,\nclick to stop it or make it move again', -550, 0);
   pop()
 
   push()
@@ -36,7 +36,7 @@ function draw() {
     textAlign(CENTER);
     textFont('sans-serif');
     fill(255);
-    text('Press S to save a picture', +750, 0);
+    text('Press S to save a picture', +550, 0);
   pop()
 
   push();
