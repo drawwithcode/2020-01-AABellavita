@@ -1,4 +1,5 @@
 tripgoing = true;
+textSwitch = true;
 
 function preload(){
   // put preload code here
@@ -23,21 +24,22 @@ function draw() {
   colorMode(HSB, 100);
   noFill();
 
+if (textSwitch == true) {
   push()
     textSize(25);
     textAlign(CENTER);
     textFont('sans-serif');
     fill(255);
-    text('Move the cursor to change colors,\nclick to stop it or make it move again', 0, 0);
+    text('Move the cursor to change colors,\nclick to stop it or make it move again', -550, 0);
+    text('Press S to save a picture\nPress T to toggle text', 550, 0);
   pop()
+}
 
+if (textSwitch == false) {
   push()
-    textSize(25);
-    textAlign(CENTER);
-    textFont('sans-serif');
-    fill(255);
-    text('Press S to save a picture', 0, 0);
+    background(0,20);
   pop()
+}
 
   push();
 
@@ -95,5 +97,15 @@ function mousePressed() {
 function keyTyped() {
   if (key == 's' || key == 'S') {
     save('Trip.png');
+  }
+}
+
+function keyTyped() {
+  if (key == 't' || key == 'Ts') {
+    if (textSwitch == true) {
+      textSwitch = false;
+    } else if (textSwitch == false) {
+      textSwitch = true;
+    }
   }
 }
