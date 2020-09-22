@@ -30,8 +30,8 @@ if (textSwitch == true) {
     textAlign(CENTER);
     textFont('sans-serif');
     fill(255);
-    text('Move the cursor to change colors,\nclick to stop it or make it move again', -550, 0);
-    text('Press S to save a picture\nPress T to toggle text', 550, 0);
+    text('Move the cursor to change colors,\nclick to stop it or make it move again', -650, 0);
+    text('Press S to save a picture\nPress T to toggle text', 650, 0);
   pop()
 }
 
