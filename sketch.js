@@ -42,6 +42,7 @@ if (textSwitch == false) {
 
   push();
 
+  scale(0.7);
   rotate(rotateV);
 
   stroke(100*mouseX/windowWidth, 100, 100);
@@ -105,5 +106,5 @@ function keyTyped() {
       textSwitch = true;
     }
   }
-  
+
 }
