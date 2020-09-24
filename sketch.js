@@ -23,22 +23,22 @@ function draw() {
   colorMode(HSB, 100);
   noFill();
 
-if (textSwitch == true) {
-  push()
-    textSize(20);
-    textAlign(CENTER);
-    textFont('sans-serif');
-    fill(255);
-    text('Move the cursor to change colors,\nclick to stop it or make it move again', -(width/3), 0);
-    text('Press S to save a picture\nPress T to toggle text', (width/3), 0);
-  pop()
-}
+  if (textSwitch == true) {
+    push()
+      textSize(20);
+      textAlign(CENTER);
+      textFont('sans-serif');
+      fill(255);
+      text('Move the cursor to change colors,\nclick to stop it or make it move again', -(width/3.2), 0);
+      text('Press S to save a picture\nPress T to toggle text', (width/3.2), 0);
+    pop()
+  }
 
-if (textSwitch == false) {
-  push()
-    background(0,20);
-  pop()
-}
+  if (textSwitch == false) {
+    push()
+      background(0,20);
+    pop()
+  }
 
   push();
 
@@ -99,7 +99,7 @@ function keyTyped() {
     save('Trip.png');
   }
 
-  if (key == 't' || key == 'Ts') {
+  if (key == 't' || key == 'T') {
     if (textSwitch == true) {
       textSwitch = false;
     } else if (textSwitch == false) {
