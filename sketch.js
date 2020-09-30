@@ -1,5 +1,5 @@
-tripgoing = true;
-textSwitch = true;
+let tripgoing = true;
+let textSwitch = true;
 
 function preload(){
 }
